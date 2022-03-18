@@ -1,0 +1,23 @@
+.accordion {
+    max-width: 500px;
+
+    &__item {
+        border-radius: 5px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    &__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+    &__text {
+        padding: 10px 20px;
+    }
+}
